@@ -45,11 +45,11 @@ extern const struct KNSemiModalOptionKeys {
     __unsafe_unretained NSString *backgroundView;     // UIView, custom background.
 } KNSemiModalOptionKeys;
 
-NS_ENUM(NSUInteger, KNSemiModalTransitionStyle) {
-	KNSemiModalTransitionStyleSlideUp,
-	KNSemiModalTransitionStyleFadeInOut,
-	KNSemiModalTransitionStyleFadeIn,
-	KNSemiModalTransitionStyleFadeOut,
+typedef NS_ENUM(NSUInteger, KNSemiModalTransitionStyle) {
+    KNSemiModalTransitionStyleSlideUp,
+    KNSemiModalTransitionStyleFadeInOut,
+    KNSemiModalTransitionStyleFadeIn,
+    KNSemiModalTransitionStyleFadeOut,
 };
 
 typedef void (^KNTransitionCompletionBlock)(void);
